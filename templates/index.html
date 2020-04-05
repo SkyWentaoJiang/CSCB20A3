@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <title>CSCB20 Login</title>
+</head>
+<body>
+<table>
+      <tr>
+        <th>type</th>
+        <th>username</th>
+        <th>password</th>
+      </tr>
+      {% for item in user %}
+      <tr>
+        <!-- the dictionary keys should be strings (otherwise Flask can't render them) -->
+        <td>{{ item['type'] }}</td>
+        <td>{{ item['username'] }}</td>
+        <td>{{ item['password'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+</body>
+</html>
