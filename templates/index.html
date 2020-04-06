@@ -6,20 +6,31 @@
     <title>CSCB20 Login</title>
 </head>
 <body>
-<table>
-      <tr>
-        <th>type</th>
-        <th>username</th>
-        <th>password</th>
-      </tr>
-      {% for item in user %}
-      <tr>
-        <!-- the dictionary keys should be strings (otherwise Flask can't render them) -->
-        <td>{{ item['type'] }}</td>
-        <td>{{ item['username'] }}</td>
-        <td>{{ item['password'] }}</td>
-      </tr>
-      {% endfor %}
+	<table>
+		<tr>
+			<th>type</th>
+			<th>username</th>
+			<th>password</th>
+		</tr>
+		{% for item in user %}
+		<tr>
+			<!-- the dictionary keys should be strings (otherwise Flask can't render them) -->
+			<td>{{ item['type'] }}</td>
+			<td>{{ item['username'] }}</td>
+			<td>{{ item['password'] }}</td>
+		</tr>
+		{% endfor %}
     </table>
+
+    <form name="register" action="/sign-up" method="POST">
+        <select action="/sign-up" name="dropdown" method="POST">
+            <option value="student">Student</option>
+            <option value="instructor">Instructor</option>
+        </select>
+        <input class="input-box" type="text" name="username" placeholder="username">
+        <input class="input-box" type="text" name="password" placeholder="password">
+        <br>
+        <button type="submit">Sign up</button>
+    </form>
 </body>
 </html>

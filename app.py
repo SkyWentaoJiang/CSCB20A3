@@ -56,6 +56,25 @@ def root():
     return render_template('index.html', user=Users)
 
 
+# add a new employee
+@app.route('/sign-up', methods=['POST'])
+def sign_up():
+    db = get_db()
+    db.row_factory = make_dicts
+    cur = db.cursor()
+
+    new_user = request.form
+
+    cur.execute('insert into Users (type, username, password) values (?, ?, ?)', [
+        new_user['dropdown'],
+        new_user['username'],
+        new_user['password']])
+    db.commit()
+    cur.close()
+
+    return redirect(url_for('root'))
+
+
 # run the app when app.py is run
 if __name__ == '__main__':
     app.run(debug=True)
