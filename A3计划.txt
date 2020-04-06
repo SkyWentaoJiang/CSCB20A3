@@ -1,4 +1,4 @@
-0--补充Course Team，Anonymous Feedback 页面（A2遗漏的）
+0--补充Course Team，Anonymous Feedback 页面（A2遗漏的）(check)
 
 1--创建github repository (check)
 
