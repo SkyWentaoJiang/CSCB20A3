@@ -41,4 +41,9 @@
 10.1. 界面html,css设计：每条request放在一个方框内（类似google搜索结果一样一条条列着），有一个solved按钮，点击超链接到查看成绩界面改分数
 10.2. 完成功能
 
+11--整理代码
+11.1. 所有HTML文件整理出template，减少重复代码
+11.2. 补充comments
 
+12--写Report
+12.1. Outline
