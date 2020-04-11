@@ -1,0 +1,61 @@
+{%extends "layout.html"%}
+{% block content %}
+    <div class="content">
+	<!-- All stuff in this page including the header, navigation and main contents -->
+		<h3 class="firsthead">Course Description</h3>
+		<!-- Main contents before header, so the contents can be hidden under the fixed header when scorlling down th page -->
+		<p>A practical introduction to databases and Web app development. Databases: terminology and applications; creating, querying and updating databases; the entity-relationship model for database design. Web documents and applications: static and interactive documents; Web servers and dynamic server-generated content; Web application development and interface with databases.</p>
+		<ul>
+			<li>Prerequisite: </li><p>Some experience with programming in an imperative language such as Python, Java or C.</p>
+			<li>Exclusion: </li><p>This course may not be taken after - or concurrently with - any C- or D-level CSC course.</p>
+			<li><a href="/static/syllabus.pdf">Syllabus</a></li>
+		</ul>
+
+		<!-- instructor section -->
+		<!-- This is the Course Team -->
+		<h3 class="firsthead">Course Team</h3>
+		<!-- put picture and biography of instructor in the same row -->
+		<div class="introOfInstructor">
+			<div class="picture" align=center>
+				<img src="/static/Anna_Bretscher.jpg" alt="picture of Instructor"/>
+				<p>Dr. Anna_Bretscher</p>
+			</div>
+			<div class="bioOfIns">
+				<p><font style="font-weight: bolder;">Email: </font><a href="mailto:bretscher@utsc.utoronto.ca">bretscher@utsc.utoronto.ca</a></p>
+				<p><font style="font-weight: bolder;">Office: </font>
+					IC493
+				</p>
+				<p><font style="font-weight: bolder;">Phone: </font>
+					(416)208-4745
+				</p>
+				<p><font style="font-weight: bolder;">Lectures: </font>
+					Mondays 9:15-11:00 in SY110
+				</p>
+				<p><font style="font-weight: bolder;">Office Hours: </font>
+					Monday 11:00 - 12:00
+				</p>
+
+			</div>
+
+			<div class="picture" align=center>
+				<img src="/static/Abbas_Attarwala.png" alt="picture of Instructor"/>
+				<p>Dr. Abbas_Attarwala</p>
+			</div>
+			<div class="bioOfIns">
+				<p><font style="font-weight: bolder;">Email: </font><a href="mailto:abbas.attarwala@utoronto.ca">abbas.attarwala@utoronto.ca</a></p>
+				<p><font style="font-weight: bolder;">Office: </font>
+					IC349
+				</p>
+				<p><font style="font-weight: bolder;">Phone: </font>
+					(416)208-5108
+				</p>
+				<p><font style="font-weight: bolder;">Lectures: </font>
+					Mondays 9:15-11:00 in SY110
+				</p>
+				<p><font style="font-weight: bolder;">Office Hours: </font>
+					Monday 11:00 - 12:00
+				</p>
+
+			</div>
+		</div>
+{%endblock content%}

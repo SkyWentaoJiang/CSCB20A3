@@ -1,0 +1,26 @@
+{%extends "layout3.html"%}
+{% block content %}
+<div id="tecremark">  <!--Instructor can see all student's remark request-->    <!--我默认把database里requstremark栏中student作为key了，故下面的表格中没有引入student -->
+	<div class="remarks">
+		<center>
+
+		<ol>
+			{% for item in remarks %}
+		  <li>{{ item['student'] }} : {{ item['type'] }}<br>
+			Reason: {{ item['reason'] }}<br>
+			  &nbsp; <form action="/solve_remark">Go to <button>Student Marks</button> to solve request</form>
+		  </li>
+		  {% endfor %}
+		</ol>
+		</center>
+	</div>
+</div>
+{% endblock content %}
+{% block header %}
+<h2>Welcome {{username}}, here are all Remark Requests!</h2>
+{% endblock %}
+{% block navigation %}
+<li><form action="/instructor_marks"><button type="submit">Student marks</button></form></li>
+<li><form action="/instructor_remark"><button type="submit">Remark requests</button></form></li>
+<li><form action="/instructor_feedback"><button type="submit">Feedback</button></form></li>
+{% endblock %}

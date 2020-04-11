@@ -6,31 +6,32 @@
     <title>CSCB20 Login</title>
 </head>
 <body>
-	<table>
-		<tr>
-			<th>type</th>
-			<th>username</th>
-			<th>password</th>
-		</tr>
-		{% for item in user %}
-		<tr>
-			<!-- the dictionary keys should be strings (otherwise Flask can't render them) -->
-			<td>{{ item['type'] }}</td>
-			<td>{{ item['username'] }}</td>
-			<td>{{ item['password'] }}</td>
-		</tr>
-		{% endfor %}
-    </table>
+<div class="index">
+    <h1>Login to your account</h1>
+    <form action="/signin">
+        <select action="/signin" name="dropdown" method="POST">
+            <option value="student">Student</option>
+            <option value="instructor">Instructor</option>
+        </select>
+      <input class="input-box" type="text" name="username" placeholder="Enter your username">
+        <input class="input-box" type="password" name="password" placeholder="Enter your password">
+      <br>
+        <button type="submit" name="login">Sign in</button>
+    </form>
 
-    <form name="register" action="/sign-up" method="POST">
-        <select action="/sign-up" name="dropdown" method="POST">
+    <h1>No account yet? Sign up now!</h1>
+
+    <form name="register" action="/signup" method="POST">
+        <select action="/signup" name="dropdown" method="POST">
             <option value="student">Student</option>
             <option value="instructor">Instructor</option>
         </select>
         <input class="input-box" type="text" name="username" placeholder="username">
-        <input class="input-box" type="text" name="password" placeholder="password">
+        <input class="input-box" type="password" name="password" placeholder="password">
         <br>
         <button type="submit">Sign up</button>
     </form>
+</div>
+
 </body>
 </html>

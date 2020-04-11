@@ -1,0 +1,122 @@
+/* overwrite the h4 properties in stylsheet.css */
+h4{
+	color: #FF0000;	
+	font-size:35px;
+	font-style: normal;
+	font-family: Lucida Console;
+	font-weight: bold;
+	font-variant: normal;
+	text-align: center;
+	position: relative;
+	margin:10px;
+}
+
+/*  */
+h5{
+	color: #000000;
+	font-size:25px;
+	font-style: oblique;
+	font-family: Arial;
+	font-weight: bold;
+	font-variant: normal;
+	text-align: center;
+	border-bottom: solid 3px #000080;
+	position: relative;
+	margin: 10px;
+}
+
+h6{
+	color: #000080;
+	font-size:30px;
+	font-style: oblique;
+	font-family: Arial;
+	font-weight: bold;
+	font-variant: normal;
+	text-align: center;
+	position: relative;
+	margin:20px;
+}
+
+.content p {
+	font-size: 16px;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+	margin:0px;
+}
+
+
+/* Two locations are put in a flex where direction is row. */
+.location{
+	margin-left:15%;
+	margin-right:15%;
+	position:relative;
+	margin-top:30px;
+	display: flex;
+	justify-content:space-evenly;
+}
+
+.location1 {
+	font-size: 25px;
+	float:left;
+	font-weight:bolder;
+	position: relative;
+	justify-content:space-evenly;
+}
+
+.location2 {
+	position: relative;
+	font-size: 25px;
+	float:left;
+	font-weight:bolder;
+	justify-content:space-evenly;
+}
+.location ul{
+	list-style:none;
+}
+
+.Tips {
+	margin-left:15%;
+	margin-right:15%;
+	color : #000080;
+	display: flex;
+	position: relative;
+	justify-content:center;
+
+	padding-top: 0px;
+	font-variant: normal;
+	vertical-align: middle;
+	font-size: large;
+	font-weight: bold;
+	font-style: oblique;
+
+}
+
+ol{
+	margin-left:20%;
+	margin-right:20%;
+	
+}
+
+.samplemid {
+	border: 2px dotted #000000;
+	margin: 10 auto;
+	text-align: center;
+	font-size:20px;
+	position: relative;
+}
+
+/* Overwrite the h1 in stylesheet.css  */
+h1{
+	color: #FF0000;
+	font-size:25px;
+	font-style: oblique;
+	font-family: Arial;
+	font-weight: bold;
+	font-variant: normal;
+	text-align: center;
+	border-bottom: solid 2px #000080;
+}
+
+
+	

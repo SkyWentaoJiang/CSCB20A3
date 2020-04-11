@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+{% block content %}
+<div class="content">
+	<!--According to the original website, the only way we embed the google calendar without using JavaScript is using iframe tag-->
+		<div class="frame" align=center>
+			<center>
+				<iframe src="https://calendar.google.com/calendar/embed?ctz=America/Toronto" style="border: 0" width="800" height="600" frameborder="10" scrolling="no">
+				</iframe>
+			</center>
+		</div>
+
+{% endblock content %}

@@ -1,0 +1,27 @@
+.mainContent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width:auto; 
+	margin-top:80px;
+	margin-bottom:0;
+}
+
+/* Put two sections of contents, one and two, in the same row in a flex */
+.mainContent {
+		color:#483D8B;
+		letter-spacing: 1px;
+		line-height:20px;
+}
+
+.one {
+	flex: 1;
+	margin:0;
+}
+
+.two {
+	flex:2;
+	margin-left:20;
+	left: 50px;
+}

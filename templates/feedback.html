@@ -1,0 +1,43 @@
+{%extends "layout3.html"%}
+{% block head %}<link rel="stylesheet" type='text/css' href="/static/feedback.css">{% endblock head %}
+{% block title %}Anonymous Feedback{% endblock %}
+{% block content %}
+		<div id="fb">
+			<form action="/send_feedback" method="POST">
+				<h4>What do you think of this course? </h4>
+				<h4 id="title2">Instructors won't see your name</h4>
+				<label>
+					<select name="dropdown">
+						<option value="choose">Choose instructor</option>
+						{% for item in instructors %}
+						<option value="{{item.username}}">{{item.username}}</option>
+						{% endfor %}
+					</select>
+				</label><br>
+
+				<label for="q1">What do you like about the instructor teaching?</label><br>
+				<textarea class="fb" name="feedback1" placeholder="Enter your feedback" cols="100" rows="15"></textarea><br><br>
+
+				<label for="q2">What do you recommend the instructor to do to improve their teaching?</label><br>
+				<textarea class="fb" name="feedback2" placeholder="Enter your feedback" cols="100" rows="15"></textarea><br><br>
+
+				<label for="q3">What do you like about the labs?</label><br>
+				<textarea class="fb" name="feedback3" placeholder="Enter your feedback" cols="100" rows="15"></textarea><br><br>
+
+				<label for="q3">What do you recommend the lab instructors to do to improve their lab teaching?</label><br>
+				<textarea class="fb" name="feedback4" placeholder="Enter your feedback" cols="100" rows="15"></textarea><br><br>
+
+
+				<input type="submit" value="Submit" class="f button">
+			</form>
+
+
+		</div>
+{% endblock content %}
+{% block header %}
+<h2>Submit your feedback to a certain instructor</h2>
+{% endblock %}
+{% block navigation %}
+<li><form action="/student_mark"><button type="submit">Marks</button></form></li>
+<li><form action="/feedback"><button type="submit">Feedback</button></form></li>
+{% endblock %}

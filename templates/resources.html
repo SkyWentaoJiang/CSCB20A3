@@ -1,0 +1,147 @@
+{%extends "layout2.html"%}
+{% block head %}<link rel="stylesheet" type='text/css' href="/static/resources.css">{% endblock head %}
+{% block content %}
+
+<div class="mainContent">
+			<!--two sections of the main content, online resources and software and documentation-->
+			<div class="one">
+				<h1><font size=6.5px>Online Resources</font></h1>
+				<!--an unordered list of different onine resources-->
+				<ul>
+					<li>
+						<a href="http://www.utsc.utoronto.ca/~bretscher/b20/">
+							<font size=5px>
+								<b>
+									Course Website
+								</b>
+							</font>
+						</a>
+						<br><br>
+						<font size=4px>
+							Course information, lecture notes, tutorial material, important
+							announcements, etc. will be posted on the course website.
+								<font color="#FF0000">
+									It is your responsibility to visit it frequently.
+								</font>
+						</font><br><br>
+					</li>
+
+					<li>
+						<b>
+							<font size=5px>
+								Beginner Tutorial for
+							</font>
+							<a href="http://code.tutsplus.com/tutorials/sql-for-beginners--net-8200">	MySQL
+							</a>
+						</b><br><br>
+					</li>
+
+					<li>
+						<font size=5px>
+							<b>
+								Email communication
+							</b>
+						</font><br><br>
+						<font size=4px>
+							Questions regarding the course material, assignments, midterm,
+							etc. should be posed on the bulletin board. Questions about
+							the assignment which you feel you cannot formulate without
+							revealing your solution
+							<font color="#FF0000">
+								(should be very rare!)
+							</font>
+							, as well as
+							questions and concerns regarding your personal matters should
+							be directed to the instructor.
+						</font><br> <br>
+					</li>
+
+					<li>
+						<a href="https://piazza.com/utoronto.ca/winter2017/cscb20">
+							<font size=5px>
+								<b>
+									Discussion board
+								</b>
+							</font>
+						</a><br><br>
+						<font size=4px>
+							You are encouraged to use the bulletin board to discuss the
+							course material, pose questions on the assignments, etc. The
+							bulletin board will be monitored by the instructor and by your
+							TAs.
+							<font color="#FF0000">
+								Please, be very careful not to reveal (parts of) yoursolution on the bulletin board.
+							</font>
+						</font>
+					</li>
+				</ul>
+			</div>
+
+			<div class="two">
+				<h1>
+					<font size=6px>
+						Software and documentation
+					</font>
+				</h1>
+				<ul>
+					<li>
+						<font size=5px>
+							How to
+							<b>
+								Log into Mathlab
+							</b>
+						</font>
+						.
+					</li></br>
+					<ul>
+						<li>
+							<font size=4px>
+								Mac OS comes with the application "terminal".  Simple click on it to run.  Login to mathlab by typing
+							</font><br>
+							<p>
+								<font size=5px>
+									<!--Use code tags to present the comland line scripts-->
+									<code>
+										<b>
+											ssh utorid@mathlab.utsc.utoronto.ca
+										</b>
+									</code>
+									.
+								</font>
+							</p>
+						<font size=3.5px>
+							Enter your password.
+						</font><br><br>
+						</li>
+
+						<li>
+							<font size=4px>
+								Windows - you will need a SSH client.  PuTTY is a good free one.  You can download and install here:
+							</font>
+							<a href="http://www.putty.org/">
+								<font size=5px>
+									<b>
+										PuTTY
+									</b>
+								</font>
+							</a>.
+							<font size=4px>
+								Use the same command as above to login to mathlab:
+							</font><br>
+							<p>
+								<font size=5px>
+									<!--Use code tags to present the comland line scripts-->
+									<code>
+										<b>
+											ssh utorid@mathlab.utsc.utoronto.ca
+										</b>
+									</code>
+									.
+								</font>
+							</p>
+						</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+{% endblock content %}

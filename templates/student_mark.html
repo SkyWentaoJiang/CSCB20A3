@@ -1,0 +1,38 @@
+{%extends "layout3.html"%}
+{% block title %}{{user_name}}'s Marks{% endblock %}
+{% block content %}
+  {% for item in marks %}
+  <center>
+    <div class="card">
+      <p>
+        <span class="bold">A1: {{ item.A1 }}</span>
+        <form action="/remark1" method="POST">
+          <label>Remark Request:</label><br>
+          <textarea name="remark1" class="input-box" cols="60" rows="15"></textarea>
+          <button type="submit">submit</button>
+        </form>
+        <span class="bold">Midterm: {{ item.Midterm }}</span> <br>
+        <form action="/remark2" method="POST">
+          <label>Remark Request:</label><br>
+          <textarea name="remark2" class="input-box" cols="60" rows="15"></textarea>
+          <button type="submit">submit</button>
+        </form>
+        <span class="bold">Final: {{ item.Final }}</span> <br>
+        <form action="/remark3" method="POST">
+          <label>Remark Request:</label><br>
+          <textarea name="remark3" class="input-box" cols="60" rows="15"></textarea>
+          <button type="submit">submit</button>
+        </form>
+      </p>
+    </div>
+  </center>
+  {% endfor %}
+  <br>
+{% endblock%}
+{% block header %}
+<h2>Welcome to {{ user_name }}'s marks page</h2>
+{% endblock %}
+{% block navigation %}
+<li><form action="/student_mark"><button type="submit">Marks</button></form></li>
+<li><form action="/feedback"><button type="submit">Feedback</button></form></li>
+{% endblock %}

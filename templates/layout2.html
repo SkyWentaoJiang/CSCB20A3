@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>CSCB20 - Introduction to Databases and Web Applications</title>
+    {% block head %}{% endblock %}
+	<link rel="stylesheet" type='text/css' href="/static/style.css">
+</head>
+<body>
+
+    <div class="content">
+    {% block content %}{% endblock %}
+
+	<div class="heading">
+		<h2>Welcome CSCB20 - Introduction to Databases and Web Applications</h2>
+
+		<!-- Use a unordered list with row direction to create the navigation bar -->
+		<div class="navigation">
+			<ul id="menu">
+				<li> <a href="/login">student/instructor functionality </a>|</li>
+				<li>|<a href="/home">home&nbsp;</a>|</li>
+				<li>|&nbsp;<a href="/calendar">calendar&nbsp;</a>|</li>
+				<li>|&nbsp;<a href="/news"><font color="#FFCC00">NEW</font> news&nbsp;</a>|</li>
+				<li>|&nbsp;<a href="https://piazza.com/mail.utoronto.ca/winter2017/csb20/home">discussion board&nbsp;</a>|</li>
+				<li>|&nbsp;<a href="/lectures">lectures&nbsp;</a>|</li>
+				<li>|&nbsp;<a href="/labs">labs&nbsp;</a>|</li>
+				<li>|&nbsp;<a href="/assignments">assignments&nbsp;</a>|</li>
+				<li>|&nbsp;<a href="/tests">tests&nbsp;</a>|</li>
+				<li>|&nbsp;<a href="/resources">resources&nbsp;</a></li>
+				<li>| <form action="/logout"><button type="submit">logout</button></form></li>
+			</ul>
+		</div>
+	</div>
+
+		<div class="footer">
+		<!--put the footer always at the bottom of the page-->
+			<center>
+				<p><a href="https://web.cs.toronto.edu/contact-us/faculty-directory">Faculty of Computer Science U of T</a><p>
+				<p>Site design by Zeyang and Wentao</p>
+			</center>
+		</div>
+	</div>
+</body>
+</html>

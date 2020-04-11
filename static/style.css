@@ -1,0 +1,202 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* h1 is used in tests.html and resources.html */
+h1{
+	color: #000000;
+	/*font-size: 30px; */
+	font-style: oblique;
+	font-family: Georgia;
+	font-weight: bold;
+	font-variant: normal;
+	text-align: center;
+}
+
+
+/* Only the header uses h2 */
+h2{
+	margin-bottom: 50px;
+}
+
+/* h4 is used in lectures.html and tests.html */
+h4 {
+	font-size:large;
+	position: relative;
+	top: 20px;
+	/*margin-left:90px;*/
+	/*padding: 20px;*/
+}
+
+/* all list items' properties */
+li{
+	font-weight: bolder;
+	font-family: Georgia;
+	font-size: 15px;
+}
+
+/* properties of navigation container of all pages */
+#menu{
+	position: relative;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+/* menu items */
+#menu li{
+	text-decoration: none;
+	float: left;
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	
+}
+
+/* the container of all stuff users can see on the webpages */
+.content{
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 100%;
+	padding-top: 40px;
+	padding-left: 0px;
+	position: relative;
+	top: 100px;
+	flex: 1;
+}
+
+/* Header of all webpages */
+.heading {
+	color : #6A5ACD;
+	background-color: #EEEEEE;
+	display: inline-block;
+	position: fixed;
+	height: 150px;
+	width: 100%;
+	top : 0px;
+	left: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+	text-align: center;
+	vertical-align: middle;
+	font-size: large;
+	font-weight: bold;
+	font-style: oblique;
+	white-space: nowrap;
+}
+
+/* the properties of menu links in the navigation bar */
+.navigation a {
+	text-decoration: none;
+}
+.navigation a:link {
+	color : #6A5ACD;
+
+}
+.navigation a:visited {
+	color : #6A5ACD;
+}
+.navigation a:hover {
+	color : #FFFFFF;
+	/*font-style: oblique;*/
+	font-weight: bolder;
+}
+
+/* The title of sections of most webpages */
+.firsthead{
+	position: relative;
+	top: 20px;
+	text-align: center;
+	font-size: 25px;
+	font-family: Georgia;
+	background-color: #EEEEEE;
+}
+
+
+/* The introduction of the instructor is put in a single section, where the picture and biography are put in a flexbox. */
+.introOfInstructor{
+	margin-left: 15%;
+	margin-right: 15%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content:space-evenly;
+}
+
+.picture{
+	float:left;
+	font-weight:bolder;
+	position:relative;
+	justify-content:space-evenly;
+}
+.bioOfIns{
+	position: relative;
+	float:left;
+	justify-content:space-evenly;
+}
+
+/* Use a star to replace the default bullet point, to make the website more colorful. */
+.content ul{
+	list-style-image: url('ul.png');
+}
+
+/* The frame the Google calendar is embeded */
+.frame{
+	position: relative;
+	top: 40px;
+	border-top: 40px;
+	padding-top: 40px;
+	padding-left: 0px;
+	flex:1;
+}
+
+/* the footer in all webpages that's always at the bottom */
+.footer{
+	top: 100px;
+	position:relative;
+	text-align: center;
+	border-top: 1px solid #000000;
+	font-size: 10px;
+	margin-bottom:5px;
+}
+
+.index {
+	color : #87CEFA;
+	background-color: #90DFFF;
+	display: inline-block;
+	position: absolute;
+	/*text-align:center;*/
+	/*height: 150px; */
+	margin:0;
+	margin-right:-50%; 
+	transform:translate(-50%,-50%);
+	width: 45%;
+	top : 50%;
+	left: 50%;
+	padding-top: 0px;
+	padding-left: 0px;
+	font-variant: normal;
+	text-align: center;
+	vertical-align: middle;
+	/*font-size: large; */
+	font-weight: bold;
+	font-style: oblique;
+	white-space: nowrap;
+	justify-content: center;
+}
+
+.index button{
+	margin-top: 0px;
+    background-color: #6A5ACD; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}

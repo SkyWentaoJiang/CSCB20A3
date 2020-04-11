@@ -1,0 +1,38 @@
+{%extends "layout3.html"%}
+{% block title %}Student Marks{% endblock %}
+{% block content %}
+    <h1>Students at CSCB20</h1>
+  <div class="card">
+    <label>Enter new marks or regrade: </label>
+    <form action="/enter_mark" method="POST">
+      <input class="input-box" type="text" name="student" placeholder="Enter student name">
+        <input class="input-box" type="text" name="A1" placeholder="Enter A1">
+        <input class="input-box" type="text" name="Midterm" placeholder="Enter Midterm">
+        <input class="input-box" type="text" name="Final" placeholder="Enter Final">
+      <button type="submit">Enter</button>
+    </form>
+    <br>
+    <label>Student number: {{ length }}</label>
+    <ol>
+      {% for item in instructor_marks %}
+      <li>{{ item['student'] }}<br>
+        <ul>
+          <li>A1: {{ item['A1'] }}</li>
+          <li>Midterm: {{ item['Midterm'] }}</li>
+          <li>final: {{ item['Final'] }}</li>
+        </ul>
+        <br>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+{% endblock%}
+{% block header %}
+<h2>Welcome, {{ username }}</h2>
+{% endblock %}
+{% block navigation %}
+<li><form action="/instructor_marks"><button type="submit">Student marks</button></form></li>
+<li><form action="/instructor_remark"><button type="submit">Remark requests</button></form></li>
+<li><form action="/instructor_feedback"><button type="submit">Feedback</button></form></li>
+{% endblock %}

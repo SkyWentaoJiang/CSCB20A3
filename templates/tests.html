@@ -1,0 +1,76 @@
+{%extends "layout2.html"%}
+{% block head %}<link rel="stylesheet" type='text/css' href="/static/tests.css">{% endblock head %}
+{% block content %}
+	<h4>WARNING</h4>
+		<h5>Midterm For CSCB20</h5>
+		<!--information of the midterm of the course that students must read,
+		    some of the words are red that the students should pay attention to
+		-->
+		<p>There will be
+			<font color = "#FF0000">one</font>
+			midterm. The midterm will be
+			<font color = "#FF0000">75min</font>
+			in length.
+		</p>
+		<!--information of the midterm of the course that students must read,
+		    some of the words are red that the students should pay attention to
+		-->
+		<p>
+			<br>You should go to
+				<u>either</u>
+				<font color = "#FF0000">HW215</font>
+				<u>or</u>
+				<font color = "#FF0000">HW216</font>
+				depending on your
+				<font color = "#FF0000">last name</font>
+				as shown below.
+			</br>
+		</p>
+		<h6>2017-1 Winter CSCB20 Midterm - Room Location</h6>
+		<ul id="location_table">
+			<li><b>Date:</b> Monday 13th, Februrary</li>
+			<li><b>Time:</b> 5:00pm to 7:00pm</li>
+			<li><b>Total Students:</b> 156 Students<br></li>
+		</ul>
+		<!--room locations represented
+			insetead of using a table, we use an unordered list
+			and put two rooms in the same row using a flexbox.
+			-->
+		<div class="location">
+			<div class="Location1">
+				<ul>
+					<li>Room</li>
+					<li>HW215</li>
+					<li>A-HE</li>
+				</ul>
+			</div>
+
+			<div class="Location2">
+				<ul>
+					<li>Room</li>
+					<li>HW216</li>
+					<li>HO-Z</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<!-- Tips for the test  -->
+		<div class="Tips">
+			<h1>Tips: How to Get GOOOOOOOOOD Grade</h1>
+		</div>
+		<div>
+			<ol>
+				<li>Understand all parts of A1.</li>
+				<li>The midterm will cover everything on databases that we did from the start until part way through the week 6 lecture.</li>
+				<li>Practice makes Perfect. No Practice, NO Perfect.</li>
+			</ol>
+		</div>
+		<!-- !!!!	Here is the sample Midterm  -->
+		<div class="samplemid">
+			<p>Here is the Sample Test:
+			<a href="testA.pdf"><b><u>&nbsp;Sample Test&nbsp;</u></b></a><br>
+			Good Luck!!</p>
+		</div>
+
+{% endblock content %}

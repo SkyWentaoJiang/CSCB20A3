@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{message}}</title>
+</head>
+<body>
+<h1>{{message}}</h1>
+{% if type == "signUpSuccess" or type == "loginError" %}
+<h4>Back to login page in <strong id="second_show">5</strong> seconds</h4>
+<script type="text/javascript" src="/static/js/timer.js">
+</script>
+{% elif type == "remarkSuccess" %}
+<a href="/student_mark">Back</a>
+{% endif %}
+</body>
+</html>
